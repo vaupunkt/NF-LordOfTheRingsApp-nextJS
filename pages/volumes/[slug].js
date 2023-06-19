@@ -15,6 +15,10 @@ export default function VolumeDetail() {
   const nextVolume = index + 1;
   const prevVolume = index - 1;
 
+  if (!currentMovie) {
+    return null;
+  }
+
   return (
     <div>
       <Head>
@@ -41,13 +45,22 @@ export default function VolumeDetail() {
       />
       <br></br>
       {index < 1 ? (
-        <Link href={`./${volumes[nextVolume].slug}`}>Next Volume ➡️</Link>
+        <Link href={`./${volumes[nextVolume].slug}`}>
+          Next Volume: {volumes[nextVolume].title} ➡️
+        </Link>
       ) : index === 2 ? (
-        <Link href={`./${volumes[prevVolume].slug}`}>⬅️ Previous Volume</Link>
+        <Link href={`./${volumes[prevVolume].slug}`}>
+          ⬅️ Previous Volume {volumes[prevVolume].title}
+        </Link>
       ) : (
         <>
-          <Link href={`./${volumes[prevVolume].slug}`}>⬅️ Previous Volume</Link>{" "}
-          <Link href={`./${volumes[nextVolume].slug}`}>Next Volume ➡️</Link>
+          <Link href={`./${volumes[prevVolume].slug}`}>
+            ⬅️ Previous Volume {volumes[prevVolume].title}
+          </Link>
+          <br></br>
+          <Link href={`./${volumes[nextVolume].slug}`}>
+            Next Volume: {volumes[nextVolume].title} ➡️
+          </Link>
         </>
       )}
     </div>
