@@ -23,7 +23,8 @@ export default function TheTwoTowers() {
       </ul>
       <Image src={data.cover} width={140} height={230} alt={data.title} />
       <br></br>
-      <Link href="./the-return-of-the-king">⬅️ Previous Volume</Link>
+      <Link href=".the-fellowship-of-the-ring">⬅️ Previous Volume</Link>
+      <Link href="./the-return-of-the-king"> Next Volume ➡️</Link>
     </div>
   );
 }
