@@ -4,9 +4,7 @@ import { volumes } from "../../lib/data.js";
 import uid from "uid";
 
 export default function TheFellowshipOfTheRings() {
-  const data = volumes.find(
-    ({ slug }) => slug === "the-fellowship-of-the-ring"
-  );
+  const data = volumes.find(({ slug }) => slug === volumes[0].slug);
   console.log(data);
   return (
     <div>

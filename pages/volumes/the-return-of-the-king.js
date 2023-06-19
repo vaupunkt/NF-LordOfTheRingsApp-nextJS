@@ -4,7 +4,7 @@ import { volumes } from "../../lib/data.js";
 import uid from "uid";
 
 export default function TheReturnOfTheKing() {
-  const data = volumes.find(({ slug }) => slug === "the-return-of-the-king");
+  const data = volumes.find(({ slug }) => slug === volumes[2].slug);
   console.log(data);
   return (
     <div>
@@ -23,8 +23,7 @@ export default function TheReturnOfTheKing() {
       </ul>
       <Image src={data.cover} width={140} height={230} alt={data.title} />
       <br></br>
-      <Link href="./the-fellowship-of-the-ring">⬅️ Previous Volume </Link>
-      <Link href="./the-two-towers"> Next Volume ➡️</Link>
+      <Link href="./the-two-towers">⬅️ Previous Volume </Link>
     </div>
   );
 }

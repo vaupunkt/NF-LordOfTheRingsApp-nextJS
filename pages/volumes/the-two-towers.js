@@ -4,7 +4,7 @@ import { volumes } from "../../lib/data.js";
 import uid from "uid";
 
 export default function TheTwoTowers() {
-  const data = volumes.find(({ slug }) => slug === "the-two-towers");
+  const data = volumes.find(({ slug }) => slug === volumes[1].slug);
   console.log(data);
   return (
     <div>
