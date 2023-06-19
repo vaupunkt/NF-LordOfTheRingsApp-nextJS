@@ -15,7 +15,7 @@ export default function VolumeDetail() {
   const nextVolume = index + 1;
   const prevVolume = index - 1;
 
-  if (!currentMovie) {
+  if (!currentVolume) {
     return null;
   }
 
