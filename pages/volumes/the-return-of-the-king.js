@@ -22,7 +22,7 @@ export default function TheReturnOfTheKing() {
       </ul>
       <Image src={data.cover} width={140} height={230} alt={data.title} />
       <br></br>
-      <Link href="./the-two-towers">⬅️ Previous Volume </Link>
+      <Link href={`./${volumes[1].slug}`}>⬅️ Previous Volume </Link>
     </div>
   );
 }

@@ -22,7 +22,7 @@ export default function TheFellowshipOfTheRings() {
       </ul>
       <Image src={data.cover} width={140} height={230} alt={data.title} />
       <br></br>
-      <Link href="./the-two-towers">Next Volume ➡️</Link>
+      <Link href={`./${volumes[1].slug}`}>Next Volume ➡️</Link>
     </div>
   );
 }
