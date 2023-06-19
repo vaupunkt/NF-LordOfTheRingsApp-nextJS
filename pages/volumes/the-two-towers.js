@@ -5,7 +5,6 @@ import uid from "uid";
 
 export default function TheTwoTowers() {
   const data = volumes.find(({ slug }) => slug === volumes[1].slug);
-  console.log(data);
   return (
     <div>
       <Link href="../volumes/">⬅️ All Volumes</Link>

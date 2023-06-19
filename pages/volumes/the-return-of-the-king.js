@@ -5,7 +5,6 @@ import uid from "uid";
 
 export default function TheReturnOfTheKing() {
   const data = volumes.find(({ slug }) => slug === volumes[2].slug);
-  console.log(data);
   return (
     <div>
       <Link href="../volumes/">⬅️ All Volumes</Link>
