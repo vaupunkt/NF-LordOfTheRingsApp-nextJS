@@ -5,7 +5,6 @@ import uid from "uid";
 
 export default function TheFellowshipOfTheRings() {
   const data = volumes.find(({ slug }) => slug === volumes[0].slug);
-
   return (
     <div>
       <Link href="../volumes/">⬅️ All Volumes</Link>
