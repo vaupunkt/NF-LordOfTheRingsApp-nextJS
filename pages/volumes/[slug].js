@@ -3,7 +3,7 @@ import Image from "next/image";
 import Head from "next/head";
 import { volumes } from "../../lib/data.js";
 import { useRouter } from "next/router";
-import uid from "uid";
+import { uid } from "uid";
 
 export default function VolumeDetail() {
   const router = useRouter();
@@ -31,7 +31,7 @@ export default function VolumeDetail() {
       <ul>
         {currentVolume.books.map((book) => {
           return (
-            <li key={uid}>
+            <li key={uid()}>
               {book.ordinal}: {book.title}
             </li>
           );
